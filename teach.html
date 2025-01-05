@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的工作日常</title>
+    
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(45deg, #F26B38, #F9C1B2); /* 背景漸變色 */
+            height: 100vh; /* 全高視口 */
+            margin: 0; /* 無邊距 */
+            display: flex; /* 使用 Flexbox */
+            flex-direction: column; /* 元素排列為上下布局 */
+            align-items: center; /* 水平居中 */
+            justify-content: overflow-position; /* 垂直居中 */
+            font-family: Arial, sans-serif; /* 字體樣式 */
+        }
+
+        h1 {
+            color: rgb(133, 63, 23); /* 設定標題文字顏色 */
+            margin-bottom: 10px; /* 與輪播的間距 */
+            font-weight: bold; /* 加粗文字 */ 
+        }
+
+        .carousel {
+            width: 100%; /* 限制輪播寬度 */
+            max-width: 1500px; /* 最大寬度 */
+        }
+
+        .center-text {
+            text-align: center; /* 文字居中 */
+            letter-spacing: 2px; /* 調整字間距 */
+        }
+
+        #font1 {
+            font-size: 20px; /* 設定字體大小 */
+            font-family: "Times New Roman", Times, serif; /* 使用 Times 字體 */
+            margin-top: 20px; /* 與輪播的間距 */
+        }
+
+        .carousel-inner img {
+        width: 1500%; /* 設定圖片寬度為容器寬度 */
+        height: 350px; /* 統一高度為 400px */
+        object-fit: cover; /* 確保圖片比例不變並填滿 */
+
+    } .image-grid {
+        display: grid; /* 使用 CSS 網格佈局 */
+        grid-template-columns: repeat(4, 1fr); /* 每行顯示 2 個圖片 */
+        gap: 50px; /* 圖片之間的間距 */
+        justify-items: center; /* 圖片水平置中 */
+        margin-top: 20px; /* 與上方內容保持距離 */
+    }
+
+    .image-grid img {
+        width: 150%; /* 讓圖片寬度適應容器 */
+        max-width: 300px; /* 限制圖片最大寬度 */
+        border: 2px solid #ccc; /* 邊框樣式 */
+        border-radius: 10px; /* 圓角邊框 */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* 添加陰影 */
+    }
+    </style>
+</head>
+<body>
+
+      
+
+    <!-- 圖片輪播 -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- 第一張圖片 -->
+            <div class="carousel-item active">
+                <img src="001.jpg" class="d-block w-100" alt="圖一">
+            </div>
+            <!-- 第二張圖片 -->
+            <div class="carousel-item">
+                <img src="002.jpg" class="d-block w-100" alt="圖二">
+            </div>
+            <!-- 第三張圖片 -->
+            <div class="carousel-item">
+                <img src="003.jpg" class="d-block w-100" alt="圖三">
+            </div>
+        </div>
+        <!-- 輪播的左右導航按鈕 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="center-text">
+        <h1>我的工作日常</h1>
+    </div>
+
+      <video width="30%" height="auto" controls autoplay muted style="border: 5px solid #9b2525; border-radius: 10px; box-shadow: 5px 5px 15px rgba(228, 151, 9, 0.5);">
+        <source src="1220.mp4" type="video/mp4">
+        您的瀏覽器不支援 video 標籤。
+    </video>
+
+    <div class="image-grid">
+        <img src="IMG_7508.jpg" alt="圖片5">
+        <img src="IMG_7506.jpg" alt="圖片6">
+        <img src="IMG_3604.jpg" alt="圖片7">
+        <img src="IMG_3591.jpg" alt="圖片8">
+        <img src="IMG_7509.jpg" alt="圖片1">
+        <img src="IMG_7510.jpg" alt="圖片3">
+        <img src="IMG_7512.jpg" alt="圖片2">
+        <img src="IMG_7511.jpg" alt="圖片4">
+    </div>
+
+
+    <!-- 引入 Bootstrap JS 和 Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="index.html">回首頁</a>
+    </li>
+  </ul>
+
+</body>
+
+
+</html>
